@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+
+    
+<div class="question-label-pair">
+    <form method="post">
+            <label for="searchTerm">Enter a single search term to refine your search:</label>
+            <input class="form-input" name="searchTerm" id="searchTerm" placeholder="Enter search terms here">
+            <label for="department">Choose a department to refine your search:</label>
+            <select class="form-input" name="department" id="department">
+            <option value="999">All Departments</option>
+            <% departments.forEach((department) => { %>
+                    <option value="<%= department.departmentId %>"><%= department.displayName %></option>
+            <% }); %>
+            </select>
+            <button class="nav-button submit-button" type="submit" formaction="/search">SUBMIT</button>
+    </form>
+</div>
+
+
+<%- include("partials/footer.ejs") %>

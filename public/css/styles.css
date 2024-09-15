@@ -1,0 +1,234 @@
+:root {
+    --background: #51644c;
+    --primary: #FFF4F4;
+    --secondary: #F7E6C4;
+    --tertiary: #F1C376;
+}
+
+.suse-headers {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-wrap: wrap;
+}
+
+.montagu-slab-details {
+  font-family: "Montagu Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+    background-color: var(--background);
+}
+
+header div.container {
+    display: flex;
+    flex-direction: row;
+    align-content: center !important;
+    align-items: flex-start !important;
+    margin: 1rem;
+    text-align: center;
+    background-color: var(--primary);
+    border-radius: 25px;
+}
+
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.question-label-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+a h1 {
+    color: var(--background);
+    display: inline;
+    margin: 1.5rem;
+    font-size: 3rem;
+}
+
+.no-underline {
+    text-decoration-line: none;
+    margin-top: 1.5em;
+}
+
+#menu-bar {
+    display: inline;
+    margin: 1.5rem;
+    margin-left: auto;
+    gap: 20px;
+    order: 2;
+}
+
+.nav-button {
+    border-radius: 25px;
+    border-color: var(--background);
+    padding: 0.7rem;
+    background-color: var(--secondary);
+    border-style: solid;
+    color: var(--background);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.submit-button {
+    border-color: var(--secondary);
+}
+
+img {
+    border-radius: 25px;
+    border-color: var(--primary);
+}
+
+footer p {
+    color: var(--secondary);
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.index-intro {
+    text-align: center;
+    color: var(--primary);
+    display: block;
+}
+
+a {
+    color: var(--tertiary);
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 0.95rem;
+    text-wrap: wrap;
+}
+
+.art-info {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2.5rem;
+    color: var(--primary);
+    max-width: 50vw;
+}
+
+.art-img {
+    margin: 1rem 2.5rem;
+    max-height: 60vh;
+    max-width: 40vw;
+}
+
+label {
+    color: var(--primary);
+    font-size: 2rem;
+    display: block;
+    margin: 1rem;
+    margin-top: 2.5rem;
+}
+
+.form-input {
+    min-width: 50vw;
+    max-width: max-content;
+    font-size: 1.5rem;
+    color: var(--background);
+    display: block;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+#homepage-intro {
+    font-size: 1.5rem;
+    margin: 1rem 4rem;
+}
+
+.button-emph {
+    color: var(--secondary);
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0.5rem;
+    margin-block-start: 0;
+}
+li {
+    text-wrap-mode: wrap;
+}
+
+ /* ADD MEDIA QUERIES FOR TABLET & MOBILE */
+ @media (max-width: 1200px) {
+    header div.container {
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0rem;
+    }
+    #menu-bar {
+      align-items: center;
+      align-content: center;
+      margin: 1rem;
+    } 
+    .container {
+     flex-direction: column;
+    } 
+    .art-info {
+     max-width: 100%;
+     margin-top: 0rem;
+    }
+    .art-img {
+     max-height: 60vh;
+     max-width: 100%;
+     margin: 1.5rem;
+    }
+    .no-underline {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .nav-button {
+        font-size: 1rem;
+    }
+    #homepage-intro {
+        font-size: 1.25rem;
+        margin: 1rem;
+    }
+ }
+
+ @media (max-width: 700px) {
+    .form-input {
+        width: 90vw;
+    }
+    #searchTerm {
+        min-width: 90%;
+    }
+    .no-underline {
+        margin-bottom: 0rem;
+    }
+    #menu-bar {
+        margin-top: 0rem;
+    }
+ }
+
+ @media (max-width: 480px) {
+    a h1 {
+        font-size: 2rem;
+    }
+    .no-underline {
+        margin-top: 1.5rem;
+        margin-bottom: 0rem;
+    }
+ }

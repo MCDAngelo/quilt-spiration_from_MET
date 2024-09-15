@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+<!-- idea for future iteration: add as a carousel, where user can flip through results -->
+    <img class="art-img" src=<%= art.primaryImage %> alt="photograph of artwork">
+    <div class="art-info">
+        <h2 class="suse-headers"><%= art.title %> <% if (art.artistDisplayName) { %> by <%= art.artistDisplayName %> <% }%></h2>
+        <ul class="montagu-slab-details">
+            <li>
+                <%= art.objectDate %>
+            </li>
+            <li>
+                <%= art.medium %>, <%= art.dimensions %>
+            </li>
+            <li>
+                <%= art.department %>, <%= art.objectName %>
+            </li>
+            <li>
+                More on this piece <a href="<%=art.objectURL%>" >here</a>.
+            </li>
+        </ul> 
+    </div>
+
+</div>
+
+<%- include("partials/footer.ejs") %>
