@@ -3,7 +3,7 @@ import axios from "axios";
 import bodyParser from "body-parser";
 
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 const metURL = "https://collectionapi.metmuseum.org/public/collection/v1"
