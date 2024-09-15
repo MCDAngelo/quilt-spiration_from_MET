@@ -29,3 +29,4 @@ nodemon index.js
 
 * Better error handling for the search route
 * Addition of search terms pertaining to the medium of the item
+* Clean up `styles.css` and improve responsiveness of website UI
